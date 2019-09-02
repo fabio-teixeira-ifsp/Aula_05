@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Contato - IFSP - Pirituba</title>
   <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon"> <!-- Adiciona o ícone de aba de navegador-->
+  <link rel="stylesheet" href="css/forms.css" />
 </head>
 
 
@@ -33,13 +34,15 @@
                 <li>
                     <label for="contato-telefone">Telefone </label>
                     <input type="tel" name="telefone" id="contato-telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"/> <span>(99) 99999-9999</span> </li>
-                <li>
-                    <label for="contato-assunto">Assunto</label>
-                    <select name="assunto" id="contato-assunto" required >
+                <li>                    
+                    <div class="custom-select" style="width:200px;"> 
+                      <label for="contato-assunto">Assunto</label>                   
+                      <select name="assunto" id="contato-assunto" required >
                         <option value=""> -- Selecione --</option>                        
                         <option value="R">Reclamação</option>
                         <option value="S">Sugestão</option>
-                    </select>
+                      </select>                    
+                    </div>                    
                 </li>
                 <li>
                     <label for="contato-mensagem">Mensagem</label>
@@ -59,6 +62,23 @@
                     <button type="submit">Enviar</button>
                 </li>
             </ul>
+            <div class="custom-select" style="width:200px;">
+			  <select>
+			    <option value="0">Select car:</option>
+			    <option value="1">Audi</option>
+			    <option value="2">BMW</option>
+			    <option value="3">Citroen</option>
+			    <option value="4">Ford</option>
+			    <option value="5">Honda</option>
+			    <option value="6">Jaguar</option>
+			    <option value="7">Land Rover</option>
+			    <option value="8">Mercedes</option>
+			    <option value="9">Mini</option>
+			    <option value="10">Nissan</option>
+			    <option value="11">Toyota</option>
+			    <option value="12">Volvo</option>
+			  </select>
+			</div>
         </form>        
 	</main>
 	
