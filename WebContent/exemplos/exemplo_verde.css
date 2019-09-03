@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+	background: green
+	}
+	
+p.right {
+    text-align: right;
+  }
+  
+p.center {
+    text-align: center
+  }
+
+.center {text-align: center}
+
+.subtitulo {
+	color: blue;	
+}
+
+p#para1 { 
+	color: red 
+	}
+
+p#para2 { 
+	color: blue 
+	}
+	
+h3, h4, h5, h6 { 
+		  color: yellow;
+		}
+		
+p#pseudo::first-line {
+  color: blue;
+  font-variant: small-caps;
+}
+
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+	
